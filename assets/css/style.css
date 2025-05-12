@@ -271,6 +271,25 @@ header .navbar ul li a:hover {
 .home .btn:hover i {
   transform: translateX(5px);
 }
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 /* social icons start */
 .socials {
   position: relative;
