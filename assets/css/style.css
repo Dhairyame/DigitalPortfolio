@@ -272,21 +272,22 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.box {
-  flex: 1 1 300px;
-  max-width: 300px;
-  margin: 10px;
-}
 
-@media screen and (max-width: 768px) {
-  .box {
-    flex: 1 1 100%;
-    max-width: 100%;
+@media (max-width: 450px) {
+  .home .btn {
+    margin: 2rem auto;
+    display: inline-block;
+    position: static;
+  }
+
+  .home .image img {
+    margin-top: 0;
+    width: 65%;
+  }
+
+  .home .content p,
+  .home .content p span {
+    font-size: 2rem;
   }
 }
 
